@@ -67,7 +67,7 @@ This project demonstrates real-world authentication, authorization, and secure A
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/user-management-system.git
+git clone https://github.com/efshaperveen/User-Management-System.git
 cd User-Management-System
 ```
 
@@ -323,7 +323,7 @@ The walkthrough video demonstrates:
 * Thunder Client API testing
 * Live deployed application
 
-📎 Video Link: (Provided separately)
+📎 Video Link: [https://drive.google.com/file/d/1nF0cuA2724mv4vJ66hrmaXMgfL9k0XB_/view?usp=drivesdk]
 
 ---
 
