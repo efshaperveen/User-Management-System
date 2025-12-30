@@ -5,7 +5,7 @@ import { useAuth } from "../context/AuthContext";
 import toast from "react-hot-toast";
 
 export default function Profile() {
-  const { user } = useAuth();
+ const { user, setUser } = useAuth();
 
   const [profile, setProfile] = useState({
     fullName: "",
@@ -38,9 +38,12 @@ export default function Profile() {
       setLoadingProfile(true);
       const res = await API.put("/api/users/profile", profile);
 
-      toast.success("Profile updated successfully");
-      localStorage.setItem("user", JSON.stringify(res.data));
-      setEditMode(false);
+toast.success("Profile updated successfully");
+setUser(res.data);
+// optional but good practice
+localStorage.setItem("user", JSON.stringify(res.data));
+setEditMode(false);
+      
     } catch (err) {
       toast.error(err.response?.data?.message || "Update failed");
     } finally {
