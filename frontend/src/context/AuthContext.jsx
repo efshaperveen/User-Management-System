@@ -84,6 +84,7 @@ export const AuthProvider = ({ children }) => {
   //  CONTEXT VALUE
   const value = {
     user,
+    setUser,
     token,
     loading,
     isAuthenticated: !!token,
